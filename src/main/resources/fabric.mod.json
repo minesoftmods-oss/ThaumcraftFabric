@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "thaumcraft_fabric",
+	"version": "${version}",
+	"name": "Thaumcraft Fabric",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/thaumcraft_fabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.thaumcraft.fabric.ThaumcraftFabric"
+		],
+		"client": [
+			"com.thaumcraft.fabric.client.ThaumcraftFabricClient"
+		]
+	},
+	"mixins": [
+		"thaumcraft_fabric.mixins.json",
+		{
+			"config": "thaumcraft_fabric.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
