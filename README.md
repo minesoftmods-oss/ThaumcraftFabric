@@ -1,4 +1,4 @@
-# Thaumcraft Fabric
+# Thaumcraft (Fabric 26.2)
 
 ## Setup
 

@@ -1,18 +1,22 @@
 {
 	"schemaVersion": 1,
-	"id": "thaumcraft_fabric",
+	"id": "thaumcraft",
 	"version": "${version}",
-	"name": "Thaumcraft Fabric",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Thaumcraft",
+	"description": "Port of Thaumcraft 4 (Minecraft 1.7.10) to Fabric for Minecraft 26.2.",
 	"authors": [
-		"Me!"
+		{
+			"name": "minesoftmods-oss",
+			"contact": {
+				"homepage": "https://github.com/minesoftmods-oss"
+			}
+		}
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/minesoftmods-oss"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/thaumcraft_fabric/icon.png",
+	"icon": "assets/thaumcraft/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -22,13 +26,6 @@
 			"com.thaumcraft.fabric.client.ThaumcraftFabricClient"
 		]
 	},
-	"mixins": [
-		"thaumcraft_fabric.mixins.json",
-		{
-			"config": "thaumcraft_fabric.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.2",

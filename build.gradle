@@ -15,7 +15,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"thaumcraft_fabric" {
+		"thaumcraft" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
