@@ -1,0 +1,491 @@
+{
+	"heartbeat": {
+		"sounds": [
+			{
+				"name": "heartbeat",
+				"stream": false
+			}
+		]
+	},
+	"spill": {
+		"sounds": [
+			{
+				"name": "spill",
+				"stream": false
+			}
+		]
+	},
+	"bubble": {
+		"sounds": [
+			"bubble1",
+			"bubble2",
+			"bubble3",
+			"bubble4"
+		]
+	},
+	"alembicknock": {
+		"sounds": [
+			{
+				"name": "alembicknock",
+				"stream": false
+			}
+		]
+	},
+	"creak": {
+		"sounds": [
+			"creak1",
+			"creak2"
+		]
+	},
+	"squeek": {
+		"sounds": [
+			"squeek1",
+			"squeek2"
+		]
+	},
+	"golemironshoot": {
+		"sounds": [
+			{
+				"name": "golemironshoot",
+				"stream": false
+			}
+		]
+	},
+	"jar": {
+		"sounds": [
+			"jar1",
+			"jar2",
+			"jar3",
+			"jar4"
+		]
+	},
+	"swarm": {
+		"sounds": [
+			"swarm1",
+			"swarm2",
+			"swarm3"
+		]
+	},
+	"swarmattack": {
+		"sounds": [
+			{
+				"name": "swarmattack",
+				"stream": false
+			}
+		]
+	},
+	"fly": {
+		"sounds": [
+			"fly1",
+			"fly2"
+		]
+	},
+	"key": {
+		"sounds": [
+			{
+				"name": "key",
+				"stream": false
+			}
+		]
+	},
+	"doorfail": {
+		"sounds": [
+			{
+				"name": "doorfail",
+				"stream": false
+			}
+		]
+	},
+	"cameraticks": {
+		"sounds": [
+			{
+				"name": "cameraticks",
+				"stream": false
+			}
+		]
+	},
+	"cameraclack": {
+		"sounds": [
+			"cameraclack1",
+			"cameraclack2",
+			"cameraclack3"
+		]
+	},
+	"pump": {
+		"sounds": [
+			"pump1",
+			"pump2",
+			"pump3"
+		]
+	},
+	"page": {
+		"sounds": [
+			"page1",
+			"page2"
+		]
+	},
+	"learn": {
+		"sounds": [
+			{
+				"name": "learn",
+				"stream": false
+			}
+		]
+	},
+	"write": {
+		"sounds": [
+			"write1",
+			"write2"
+		]
+	},
+	"erase": {
+		"sounds": [
+			{
+				"name": "erase",
+				"stream": false
+			}
+		]
+	},
+	"brain": {
+		"sounds": [
+			"brain1",
+			"brain2",
+			"brain3",
+			"brain4"
+		]
+	},
+	"crystal": {
+		"sounds": [
+			{
+				"name": "crystal",
+				"stream": false
+			}
+		]
+	},
+	"wispdead": {
+		"sounds": [
+			{
+				"name": "wispdead",
+				"stream": false
+			}
+		]
+	},
+	"wisplive": {
+		"sounds": [
+			"wisplive1",
+			"wisplive2",
+			"wisplive3"
+		]
+	},
+	"wand": {
+		"sounds": [
+			"wand1",
+			"wand2",
+			"wand3"
+		]
+	},
+	"wandfail": {
+		"sounds": [
+			{
+				"name": "wandfail",
+				"stream": false
+			}
+		]
+	},
+	"rumble": {
+		"sounds": [
+			{
+				"name": "rumble",
+				"stream": false
+			}
+		]
+	},
+	"ice": {
+		"sounds": [
+			"ice1",
+			"ice2",
+			"ice3"
+		]
+	},
+	"jacobs": {
+		"sounds": [
+			{
+				"name": "jacobs",
+				"stream": false
+			}
+		]
+	},
+	"hhoff": {
+		"sounds": [
+			{
+				"name": "hhoff",
+				"stream": false
+			}
+		]
+	},
+	"hhon": {
+		"sounds": [
+			{
+				"name": "hhon",
+				"stream": false
+			}
+		]
+	},
+	"pech_idle": {
+		"sounds": [
+			"pech_idle1",
+			"pech_idle2",
+			"pech_idle3"
+		]
+	},
+	"pech_trade": {
+		"sounds": [
+			{
+				"name": "pech_trade",
+				"stream": false
+			}
+		]
+	},
+	"pech_dice": {
+		"sounds": [
+			{
+				"name": "pech_dice",
+				"stream": false
+			}
+		]
+	},
+	"pech_hit": {
+		"sounds": [
+			"pech_hit1",
+			"pech_hit2"
+		]
+	},
+	"pech_death": {
+		"sounds": [
+			{
+				"name": "pech_death",
+				"stream": false
+			}
+		]
+	},
+	"pech_charge": {
+		"sounds": [
+			"pech_charge1",
+			"pech_charge2"
+		]
+	},
+	"shock": {
+		"sounds": [
+			"shock1",
+			"shock2"
+		]
+	},
+	"fireloop": {
+		"sounds": [
+			{
+				"name": "fireloop",
+				"stream": false
+			}
+		]
+	},
+	"zap": {
+		"sounds": [
+			"zap1",
+			"zap2"
+		]
+	},
+	"craftfail": {
+		"sounds": [
+			{
+				"name": "craftfail",
+				"stream": false
+			}
+		]
+	},
+	"craftstart": {
+		"sounds": [
+			{
+				"name": "craftstart",
+				"stream": false
+			}
+		]
+	},
+	"runic_shield_effect": {
+		"sounds": [
+			{
+				"name": "runic_shield_effect",
+				"stream": false
+			}
+		]
+	},
+	"runic_shield_charge": {
+		"sounds": [
+			{
+				"name": "runic_shield_charge",
+				"stream": false
+			}
+		]
+	},
+	"swing": {
+		"sounds": [
+			"swing1",
+			"swing2"
+		]
+	},
+	"wind": {
+		"sounds": [
+			"wind1",
+			"wind2"
+		]
+	},
+	"tool": {
+		"sounds": [
+			"tool1",
+			"tool2"
+		]
+	},
+	"gore": {
+		"sounds": [
+			"gore1",
+			"gore2"
+		]
+	},
+	"roots": {
+		"sounds": [
+			"roots1",
+			"roots2",
+			"roots3"
+		]
+	},
+	"tentacle": {
+		"sounds": [
+			"tentacle1",
+			"tentacle2",
+			"tentacle3"
+		]
+	},
+	"upgrade": {
+		"sounds": [
+			{
+				"name": "upgrade",
+				"stream": false
+			}
+		]
+	},
+	"whispers": {
+		"sounds": [
+			{
+				"name": "whispers",
+				"stream": false
+			}
+		]
+	},
+	"monolith": {
+		"sounds": [
+			{
+				"name": "monolith",
+				"stream": false
+			}
+		]
+	},
+	"infuser": {
+		"sounds": [
+			{
+				"name": "infuser",
+				"stream": false
+			}
+		]
+	},
+	"infuserstart": {
+		"sounds": [
+			{
+				"name": "infuserstart",
+				"stream": false
+			}
+		]
+	},
+	"egidle": {
+		"sounds": [
+			"egidle1",
+			"egidle2"
+		]
+	},
+	"egattack": {
+		"sounds": [
+			{
+				"name": "egattack",
+				"stream": false
+			}
+		]
+	},
+	"egdeath": {
+		"sounds": [
+			{
+				"name": "egdeath",
+				"stream": false
+			}
+		]
+	},
+	"egscreech": {
+		"sounds": [
+			{
+				"name": "egscreech",
+				"stream": false
+			}
+		]
+	},
+	"crabclaw": {
+		"sounds": [
+			{
+				"name": "crabclaw",
+				"stream": false
+			}
+		]
+	},
+	"crabdeath": {
+		"sounds": [
+			{
+				"name": "crabdeath",
+				"stream": false
+			}
+		]
+	},
+	"crabtalk": {
+		"sounds": [
+			"crabtalk1",
+			"crabtalk2",
+			"crabtalk3"
+		]
+	},
+	"chant": {
+		"sounds": [
+			"chant1",
+			"chant2",
+			"chant3"
+		]
+	},
+	"coins": {
+		"sounds": [
+			{
+				"name": "coins",
+				"stream": false
+			}
+		]
+	},
+	"urnbreak": {
+		"sounds": [
+			{
+				"name": "urnbreak",
+				"stream": false
+			}
+		]
+	},
+	"evilportal": {
+		"sounds": [
+			{
+				"name": "evilportal",
+				"stream": false
+			}
+		]
+	}
+}

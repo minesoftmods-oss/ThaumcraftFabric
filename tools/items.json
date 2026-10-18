@@ -1,0 +1,20 @@
+[
+  {"id": "alumentum",          "texture": "alumentum",       "old_key": "item.ItemResource.0.name"},
+  {"id": "nitor",              "texture": "nitor",           "old_key": "item.ItemResource.1.name"},
+  {"id": "thaumium_ingot",     "texture": "thaumiumingot",   "old_key": "item.ItemResource.2.name"},
+  {"id": "quicksilver",        "texture": "quicksilver",     "old_key": "item.ItemResource.3.name"},
+  {"id": "magic_tallow",       "texture": "tallow",          "old_key": "item.ItemResource.4.name"},
+  {"id": "amber",              "texture": "amber",           "old_key": "item.ItemResource.6.name"},
+  {"id": "enchanted_fabric",   "texture": "cloth",           "old_key": "item.ItemResource.7.name"},
+  {"id": "vis_filter",         "texture": "filter",          "old_key": "item.ItemResource.8.name"},
+  {"id": "knowledge_fragment", "texture": "knowledgefragment","old_key": "item.ItemResource.9.name"},
+  {"id": "mirrored_glass",     "texture": "mirrorglass",     "old_key": "item.ItemResource.10.name"},
+  {"id": "tainted_goo",        "texture": "taint_slime",     "old_key": "item.ItemResource.11.name"},
+  {"id": "taint_tendril",      "texture": "taint_tendril",   "old_key": "item.ItemResource.12.name"},
+  {"id": "jar_label",          "texture": "label",           "old_key": "item.ItemResource.13.name"},
+  {"id": "salis_mundus",       "texture": "dust",            "old_key": "item.ItemResource.14.name"},
+  {"id": "primal_charm",       "texture": "charm",           "old_key": "item.ItemResource.15.name"},
+  {"id": "void_metal_ingot",   "texture": "voidingot",       "old_key": "item.ItemResource.16.name"},
+  {"id": "void_seed",          "texture": "voidseed",        "old_key": "item.ItemResource.17.name"},
+  {"id": "gold_coin",          "texture": "coin",            "old_key": "item.ItemResource.18.name"}
+]
