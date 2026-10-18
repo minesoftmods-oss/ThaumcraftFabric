@@ -2,7 +2,7 @@
 	"heartbeat": {
 		"sounds": [
 			{
-				"name": "heartbeat",
+				"name": "thaumcraft:heartbeat",
 				"stream": false
 			}
 		]
@@ -10,80 +10,114 @@
 	"spill": {
 		"sounds": [
 			{
-				"name": "spill",
+				"name": "thaumcraft:spill",
 				"stream": false
 			}
 		]
 	},
 	"bubble": {
 		"sounds": [
-			"bubble1",
-			"bubble2",
-			"bubble3",
-			"bubble4"
+			{
+				"name": "thaumcraft:bubble1"
+			},
+			{
+				"name": "thaumcraft:bubble2"
+			},
+			{
+				"name": "thaumcraft:bubble3"
+			},
+			{
+				"name": "thaumcraft:bubble4"
+			}
 		]
 	},
 	"alembicknock": {
 		"sounds": [
 			{
-				"name": "alembicknock",
+				"name": "thaumcraft:alembicknock",
 				"stream": false
 			}
 		]
 	},
 	"creak": {
 		"sounds": [
-			"creak1",
-			"creak2"
+			{
+				"name": "thaumcraft:creak1"
+			},
+			{
+				"name": "thaumcraft:creak2"
+			}
 		]
 	},
 	"squeek": {
 		"sounds": [
-			"squeek1",
-			"squeek2"
+			{
+				"name": "thaumcraft:squeek1"
+			},
+			{
+				"name": "thaumcraft:squeek2"
+			}
 		]
 	},
 	"golemironshoot": {
 		"sounds": [
 			{
-				"name": "golemironshoot",
+				"name": "thaumcraft:golemironshoot",
 				"stream": false
 			}
 		]
 	},
 	"jar": {
 		"sounds": [
-			"jar1",
-			"jar2",
-			"jar3",
-			"jar4"
+			{
+				"name": "thaumcraft:jar1"
+			},
+			{
+				"name": "thaumcraft:jar2"
+			},
+			{
+				"name": "thaumcraft:jar3"
+			},
+			{
+				"name": "thaumcraft:jar4"
+			}
 		]
 	},
 	"swarm": {
 		"sounds": [
-			"swarm1",
-			"swarm2",
-			"swarm3"
+			{
+				"name": "thaumcraft:swarm1"
+			},
+			{
+				"name": "thaumcraft:swarm2"
+			},
+			{
+				"name": "thaumcraft:swarm3"
+			}
 		]
 	},
 	"swarmattack": {
 		"sounds": [
 			{
-				"name": "swarmattack",
+				"name": "thaumcraft:swarmattack",
 				"stream": false
 			}
 		]
 	},
 	"fly": {
 		"sounds": [
-			"fly1",
-			"fly2"
+			{
+				"name": "thaumcraft:fly1"
+			},
+			{
+				"name": "thaumcraft:fly2"
+			}
 		]
 	},
 	"key": {
 		"sounds": [
 			{
-				"name": "key",
+				"name": "thaumcraft:key",
 				"stream": false
 			}
 		]
@@ -91,7 +125,7 @@
 	"doorfail": {
 		"sounds": [
 			{
-				"name": "doorfail",
+				"name": "thaumcraft:doorfail",
 				"stream": false
 			}
 		]
@@ -99,65 +133,93 @@
 	"cameraticks": {
 		"sounds": [
 			{
-				"name": "cameraticks",
+				"name": "thaumcraft:cameraticks",
 				"stream": false
 			}
 		]
 	},
 	"cameraclack": {
 		"sounds": [
-			"cameraclack1",
-			"cameraclack2",
-			"cameraclack3"
+			{
+				"name": "thaumcraft:cameraclack1"
+			},
+			{
+				"name": "thaumcraft:cameraclack2"
+			},
+			{
+				"name": "thaumcraft:cameraclack3"
+			}
 		]
 	},
 	"pump": {
 		"sounds": [
-			"pump1",
-			"pump2",
-			"pump3"
+			{
+				"name": "thaumcraft:pump1"
+			},
+			{
+				"name": "thaumcraft:pump2"
+			},
+			{
+				"name": "thaumcraft:pump3"
+			}
 		]
 	},
 	"page": {
 		"sounds": [
-			"page1",
-			"page2"
+			{
+				"name": "thaumcraft:page1"
+			},
+			{
+				"name": "thaumcraft:page2"
+			}
 		]
 	},
 	"learn": {
 		"sounds": [
 			{
-				"name": "learn",
+				"name": "thaumcraft:learn",
 				"stream": false
 			}
 		]
 	},
 	"write": {
 		"sounds": [
-			"write1",
-			"write2"
+			{
+				"name": "thaumcraft:write1"
+			},
+			{
+				"name": "thaumcraft:write2"
+			}
 		]
 	},
 	"erase": {
 		"sounds": [
 			{
-				"name": "erase",
+				"name": "thaumcraft:erase",
 				"stream": false
 			}
 		]
 	},
 	"brain": {
 		"sounds": [
-			"brain1",
-			"brain2",
-			"brain3",
-			"brain4"
+			{
+				"name": "thaumcraft:brain1"
+			},
+			{
+				"name": "thaumcraft:brain2"
+			},
+			{
+				"name": "thaumcraft:brain3"
+			},
+			{
+				"name": "thaumcraft:brain4"
+			}
 		]
 	},
 	"crystal": {
 		"sounds": [
 			{
-				"name": "crystal",
+				"name": "thaumcraft:crystal",
 				"stream": false
 			}
 		]
@@ -165,29 +227,41 @@
 	"wispdead": {
 		"sounds": [
 			{
-				"name": "wispdead",
+				"name": "thaumcraft:wispdead",
 				"stream": false
 			}
 		]
 	},
 	"wisplive": {
 		"sounds": [
-			"wisplive1",
-			"wisplive2",
-			"wisplive3"
+			{
+				"name": "thaumcraft:wisplive1"
+			},
+			{
+				"name": "thaumcraft:wisplive2"
+			},
+			{
+				"name": "thaumcraft:wisplive3"
+			}
 		]
 	},
 	"wand": {
 		"sounds": [
-			"wand1",
-			"wand2",
-			"wand3"
+			{
+				"name": "thaumcraft:wand1"
+			},
+			{
+				"name": "thaumcraft:wand2"
+			},
+			{
+				"name": "thaumcraft:wand3"
+			}
 		]
 	},
 	"wandfail": {
 		"sounds": [
 			{
-				"name": "wandfail",
+				"name": "thaumcraft:wandfail",
 				"stream": false
 			}
 		]
@@ -195,22 +269,28 @@
 	"rumble": {
 		"sounds": [
 			{
-				"name": "rumble",
+				"name": "thaumcraft:rumble",
 				"stream": false
 			}
 		]
 	},
 	"ice": {
 		"sounds": [
-			"ice1",
-			"ice2",
-			"ice3"
+			{
+				"name": "thaumcraft:ice1"
+			},
+			{
+				"name": "thaumcraft:ice2"
+			},
+			{
+				"name": "thaumcraft:ice3"
+			}
 		]
 	},
 	"jacobs": {
 		"sounds": [
 			{
-				"name": "jacobs",
+				"name": "thaumcraft:jacobs",
 				"stream": false
 			}
 		]
@@ -218,7 +298,7 @@
 	"hhoff": {
 		"sounds": [
 			{
-				"name": "hhoff",
+				"name": "thaumcraft:hhoff",
 				"stream": false
 			}
 		]
@@ -226,22 +306,28 @@
 	"hhon": {
 		"sounds": [
 			{
-				"name": "hhon",
+				"name": "thaumcraft:hhon",
 				"stream": false
 			}
 		]
 	},
 	"pech_idle": {
 		"sounds": [
-			"pech_idle1",
-			"pech_idle2",
-			"pech_idle3"
+			{
+				"name": "thaumcraft:pech_idle1"
+			},
+			{
+				"name": "thaumcraft:pech_idle2"
+			},
+			{
+				"name": "thaumcraft:pech_idle3"
+			}
 		]
 	},
 	"pech_trade": {
 		"sounds": [
 			{
-				"name": "pech_trade",
+				"name": "thaumcraft:pech_trade",
 				"stream": false
 			}
 		]
@@ -249,55 +335,71 @@
 	"pech_dice": {
 		"sounds": [
 			{
-				"name": "pech_dice",
+				"name": "thaumcraft:pech_dice",
 				"stream": false
 			}
 		]
 	},
 	"pech_hit": {
 		"sounds": [
-			"pech_hit1",
-			"pech_hit2"
+			{
+				"name": "thaumcraft:pech_hit1"
+			},
+			{
+				"name": "thaumcraft:pech_hit2"
+			}
 		]
 	},
 	"pech_death": {
 		"sounds": [
 			{
-				"name": "pech_death",
+				"name": "thaumcraft:pech_death",
 				"stream": false
 			}
 		]
 	},
 	"pech_charge": {
 		"sounds": [
-			"pech_charge1",
-			"pech_charge2"
+			{
+				"name": "thaumcraft:pech_charge1"
+			},
+			{
+				"name": "thaumcraft:pech_charge2"
+			}
 		]
 	},
 	"shock": {
 		"sounds": [
-			"shock1",
-			"shock2"
+			{
+				"name": "thaumcraft:shock1"
+			},
+			{
+				"name": "thaumcraft:shock2"
+			}
 		]
 	},
 	"fireloop": {
 		"sounds": [
 			{
-				"name": "fireloop",
+				"name": "thaumcraft:fireloop",
 				"stream": false
 			}
 		]
 	},
 	"zap": {
 		"sounds": [
-			"zap1",
-			"zap2"
+			{
+				"name": "thaumcraft:zap1"
+			},
+			{
+				"name": "thaumcraft:zap2"
+			}
 		]
 	},
 	"craftfail": {
 		"sounds": [
 			{
-				"name": "craftfail",
+				"name": "thaumcraft:craftfail",
 				"stream": false
 			}
 		]
@@ -305,7 +407,7 @@
 	"craftstart": {
 		"sounds": [
 			{
-				"name": "craftstart",
+				"name": "thaumcraft:craftstart",
 				"stream": false
 			}
 		]
@@ -313,7 +415,7 @@
 	"runic_shield_effect": {
 		"sounds": [
 			{
-				"name": "runic_shield_effect",
+				"name": "thaumcraft:runic_shield_effect",
 				"stream": false
 			}
 		]
@@ -321,53 +423,81 @@
 	"runic_shield_charge": {
 		"sounds": [
 			{
-				"name": "runic_shield_charge",
+				"name": "thaumcraft:runic_shield_charge",
 				"stream": false
 			}
 		]
 	},
 	"swing": {
 		"sounds": [
-			"swing1",
-			"swing2"
+			{
+				"name": "thaumcraft:swing1"
+			},
+			{
+				"name": "thaumcraft:swing2"
+			}
 		]
 	},
 	"wind": {
 		"sounds": [
-			"wind1",
-			"wind2"
+			{
+				"name": "thaumcraft:wind1"
+			},
+			{
+				"name": "thaumcraft:wind2"
+			}
 		]
 	},
 	"tool": {
 		"sounds": [
-			"tool1",
-			"tool2"
+			{
+				"name": "thaumcraft:tool1"
+			},
+			{
+				"name": "thaumcraft:tool2"
+			}
 		]
 	},
 	"gore": {
 		"sounds": [
-			"gore1",
-			"gore2"
+			{
+				"name": "thaumcraft:gore1"
+			},
+			{
+				"name": "thaumcraft:gore2"
+			}
 		]
 	},
 	"roots": {
 		"sounds": [
-			"roots1",
-			"roots2",
-			"roots3"
+			{
+				"name": "thaumcraft:roots1"
+			},
+			{
+				"name": "thaumcraft:roots2"
+			},
+			{
+				"name": "thaumcraft:roots3"
+			}
 		]
 	},
 	"tentacle": {
 		"sounds": [
-			"tentacle1",
-			"tentacle2",
-			"tentacle3"
+			{
+				"name": "thaumcraft:tentacle1"
+			},
+			{
+				"name": "thaumcraft:tentacle2"
+			},
+			{
+				"name": "thaumcraft:tentacle3"
+			}
 		]
 	},
 	"upgrade": {
 		"sounds": [
 			{
-				"name": "upgrade",
+				"name": "thaumcraft:upgrade",
 				"stream": false
 			}
 		]
@@ -375,7 +505,7 @@
 	"whispers": {
 		"sounds": [
 			{
-				"name": "whispers",
+				"name": "thaumcraft:whispers",
 				"stream": false
 			}
 		]
@@ -383,7 +513,7 @@
 	"monolith": {
 		"sounds": [
 			{
-				"name": "monolith",
+				"name": "thaumcraft:monolith",
 				"stream": false
 			}
 		]
@@ -391,7 +521,7 @@
 	"infuser": {
 		"sounds": [
 			{
-				"name": "infuser",
+				"name": "thaumcraft:infuser",
 				"stream": false
 			}
 		]
@@ -399,21 +529,25 @@
 	"infuserstart": {
 		"sounds": [
 			{
-				"name": "infuserstart",
+				"name": "thaumcraft:infuserstart",
 				"stream": false
 			}
 		]
 	},
 	"egidle": {
 		"sounds": [
-			"egidle1",
-			"egidle2"
+			{
+				"name": "thaumcraft:egidle1"
+			},
+			{
+				"name": "thaumcraft:egidle2"
+			}
 		]
 	},
 	"egattack": {
 		"sounds": [
 			{
-				"name": "egattack",
+				"name": "thaumcraft:egattack",
 				"stream": false
 			}
 		]
@@ -421,7 +555,7 @@
 	"egdeath": {
 		"sounds": [
 			{
-				"name": "egdeath",
+				"name": "thaumcraft:egdeath",
 				"stream": false
 			}
 		]
@@ -429,7 +563,7 @@
 	"egscreech": {
 		"sounds": [
 			{
-				"name": "egscreech",
+				"name": "thaumcraft:egscreech",
 				"stream": false
 			}
 		]
@@ -437,7 +571,7 @@
 	"crabclaw": {
 		"sounds": [
 			{
-				"name": "crabclaw",
+				"name": "thaumcraft:crabclaw",
 				"stream": false
 			}
 		]
@@ -445,29 +579,41 @@
 	"crabdeath": {
 		"sounds": [
 			{
-				"name": "crabdeath",
+				"name": "thaumcraft:crabdeath",
 				"stream": false
 			}
 		]
 	},
 	"crabtalk": {
 		"sounds": [
-			"crabtalk1",
-			"crabtalk2",
-			"crabtalk3"
+			{
+				"name": "thaumcraft:crabtalk1"
+			},
+			{
+				"name": "thaumcraft:crabtalk2"
+			},
+			{
+				"name": "thaumcraft:crabtalk3"
+			}
 		]
 	},
 	"chant": {
 		"sounds": [
-			"chant1",
-			"chant2",
-			"chant3"
+			{
+				"name": "thaumcraft:chant1"
+			},
+			{
+				"name": "thaumcraft:chant2"
+			},
+			{
+				"name": "thaumcraft:chant3"
+			}
 		]
 	},
 	"coins": {
 		"sounds": [
 			{
-				"name": "coins",
+				"name": "thaumcraft:coins",
 				"stream": false
 			}
 		]
@@ -475,7 +621,7 @@
 	"urnbreak": {
 		"sounds": [
 			{
-				"name": "urnbreak",
+				"name": "thaumcraft:urnbreak",
 				"stream": false
 			}
 		]
@@ -483,7 +629,7 @@
 	"evilportal": {
 		"sounds": [
 			{
-				"name": "evilportal",
+				"name": "thaumcraft:evilportal",
 				"stream": false
 			}
 		]

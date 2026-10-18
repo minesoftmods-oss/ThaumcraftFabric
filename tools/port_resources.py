@@ -3,12 +3,17 @@
 
 Usage:  python tools/port_resources.py <unzipped original jar dir> [<project dir>]
 
-Textures:  assets/thaumcraft/textures/blocks -> textures/block
-           assets/thaumcraft/textures/items  -> textures/item
-           every other folder is copied as is. File names are lowercased
-           (26.x identifiers allow only [a-z0-9/._-]).
+Textures:  PNG files AND their .png.mcmeta files (animations, blur) are ported.
+           blocks/ and items/ become block/ and item/, but they are NOT put into the
+           resources: every file in textures/block and textures/item is stitched into the
+           game atlas, and the original contains animation strips, 4096x256 effect images
+           and other non-icon textures. They are kept in tools/legacy_textures/ and
+           tools/gen_item_assets.py copies only the ones a registered item really uses.
+           Every other folder (gui, misc, models, foci, aspects) is copied as is.
+           File names are lowercased (26.x identifiers allow only [a-z0-9/._-]).
 Sounds:    .ogg files are lowercased/renamed, sounds.json is rewritten in the
-           26.x format ("category" removed, runicShieldEffect -> runic_shield_effect)
+           26.x format ("category" removed, sound names get the "thaumcraft:" namespace,
+           runicShieldEffect -> runic_shield_effect)
            and registry/ModSounds.java is generated.
 """
 import json, pathlib, re, shutil, sys
@@ -20,17 +25,24 @@ DIR_RENAMES = {"blocks": "block", "items": "item"}
 def norm(name: str) -> str:
     return SOUND_RENAMES.get(name, name).lower()
 
-def port_textures(src: pathlib.Path, dst: pathlib.Path):
-    n = renamed = 0
-    for f in sorted((src / "textures").rglob("*.png")):
+STAGED = {"block", "item"}   # atlas folders, see docstring
+
+def port_textures(src: pathlib.Path, dst: pathlib.Path, legacy: pathlib.Path):
+    n = staged = meta = 0
+    files = sorted(f for f in (src / "textures").rglob("*") if f.is_file() and f.suffix in (".png", ".mcmeta"))
+    for f in files:
         rel = f.relative_to(src).as_posix()
-        if rel in SKIP: continue
+        if rel in SKIP or rel.replace(".mcmeta", "") in SKIP: continue
         parts = rel.split("/")
         if parts[1] in DIR_RENAMES: parts[1] = DIR_RENAMES[parts[1]]
-        out = "/".join(parts[:-1] + [parts[-1].lower()])
-        if out != rel: renamed += 1
-        t = dst / out; t.parent.mkdir(parents=True, exist_ok=True); shutil.copy2(f, t); n += 1
-    print(f"textures: {n} copied, {renamed} renamed")
+        name = parts[-1].lower()
+        if parts[1] in STAGED:
+            t = legacy / parts[1] / name; staged += 1
+        else:
+            t = dst / "/".join(parts[:-1] + [name]); n += 1
+        if f.suffix == ".mcmeta": meta += 1
+        t.parent.mkdir(parents=True, exist_ok=True); shutil.copy2(f, t)
+    print(f"textures: {n} copied to resources, {staged} staged in tools/legacy_textures ({meta} .mcmeta files included)")
 
 def port_sounds(src: pathlib.Path, dst: pathlib.Path, java_dir: pathlib.Path):
     n = 0
@@ -42,12 +54,12 @@ def port_sounds(src: pathlib.Path, dst: pathlib.Path, java_dir: pathlib.Path):
     for event, body in old.items():
         sounds = []
         for s in body["sounds"]:
-            if isinstance(s, str): sounds.append(norm(s))
+            if isinstance(s, str): sounds.append({"name": "thaumcraft:" + norm(s)})
             else:
-                s = dict(s); s["name"] = norm(s["name"]); sounds.append(s)
+                s = dict(s); s["name"] = "thaumcraft:" + norm(s["name"]); sounds.append(s)
         new[norm(event)] = {"sounds": sounds}
     (dst / "sounds.json").write_text(json.dumps(new, indent="\t") + "\n", encoding="utf-8")
-    missing = [s if isinstance(s, str) else s["name"] for v in new.values() for s in v["sounds"]]
+    missing = [s["name"].split(":")[1] for v in new.values() for s in v["sounds"]]
     missing = [m for m in missing if not (dst / "sounds" / (m + ".ogg")).exists()]
     print(f"sounds: {n} files, {len(new)} events, missing files: {missing or 'none'}")
     lines = ["package com.thaumcraft.fabric.registry;", "",
@@ -68,5 +80,6 @@ if __name__ == "__main__":
     orig = pathlib.Path(sys.argv[1]) / "assets" / "thaumcraft"
     proj = pathlib.Path(sys.argv[2]) if len(sys.argv) > 2 else pathlib.Path(".")
     res = proj / "src/main/resources/assets/thaumcraft"
+    legacy = proj / "tools/legacy_textures"
     jav = proj / "src/main/java/com/thaumcraft/fabric/registry"
-    port_textures(orig, res); port_sounds(orig, res, jav)
+    port_textures(orig, res, legacy); port_sounds(orig, res, jav)
