@@ -17,7 +17,16 @@ registry names later, once blocks/items/entities are registered.
 import json, pathlib, sys
 
 # Old 1.7.10 key -> new 26.x key, written by gen_item_assets.py (and later by the other generators)
-KEY_MAP_FILE = pathlib.Path(__file__).with_name("key_map.json")
+TOOLS_DIR = pathlib.Path(__file__).parent
+# New keys that do not exist in the original lang files; added to every locale as is.
+EXTRA_LANG_FILE = TOOLS_DIR / "extra_lang.json"
+
+def load_key_map():
+    """Merges every tools/key_map*.json (one file per generator)."""
+    merged = {}
+    for f in sorted(TOOLS_DIR.glob("key_map*.json")):
+        merged.update(json.loads(f.read_text(encoding="utf-8")))
+    return merged
 
 # Known key typos in the original translations: locale -> {wrong key: right key}
 KEY_RENAMES = {"ru_RU": {"champion.bold": "champion.mod.bold", "champion.spine": "champion.mod.spine"}}
@@ -78,10 +87,14 @@ def main():
             notes.append(f"{len(missing)} missing keys filled from English: {missing}")
         if dups: notes.append(f"duplicate keys (last wins): {sorted(set(dups))}")
         if skipped: notes.append(f"skipped lines: {skipped}")
-        key_map = json.loads(KEY_MAP_FILE.read_text(encoding="utf-8")) if KEY_MAP_FILE.exists() else {}
+        key_map = load_key_map()
         if key_map:
             data = {key_map.get(k, k): v for k, v in data.items()}
             notes.append(f"{sum(1 for k in key_map if k in en_data)} keys remapped to 26.x names")
+        if EXTRA_LANG_FILE.exists():
+            extra = json.loads(EXTRA_LANG_FILE.read_text(encoding="utf-8"))
+            data.update(extra)
+            notes.append(f"{len(extra)} new keys added from extra_lang.json")
         out = out_dir / (loc.lower() + ".json")
         out.write_text(json.dumps(data, ensure_ascii=False, indent="\t") + "\n", encoding="utf-8")
         total += len(data)

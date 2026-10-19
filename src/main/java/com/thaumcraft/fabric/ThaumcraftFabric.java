@@ -1,5 +1,7 @@
 package com.thaumcraft.fabric;
 
+import com.thaumcraft.fabric.aspect.Aspect;
+import com.thaumcraft.fabric.aspect.AspectList;
 import com.thaumcraft.fabric.registry.ModCreativeTabs;
 import com.thaumcraft.fabric.registry.ModItems;
 import com.thaumcraft.fabric.registry.ModSounds;
@@ -23,6 +25,11 @@ public class ThaumcraftFabric implements ModInitializer {
 		ModCreativeTabs.init();
 
 		LOGGER.info("Registered {} items", ModItems.ALL.size());
+		LOGGER.info("Registered {} aspects ({} primal, {} compound)",
+				Aspect.getAspects().size(), Aspect.getPrimalAspects().size(), Aspect.getCompoundAspects().size());
+
+		AspectList.verifyCodecs();
+		LOGGER.info("AspectList codecs OK");
 	}
 
 	public static Identifier id(String path) {
